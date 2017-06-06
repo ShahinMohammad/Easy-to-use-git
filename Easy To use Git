@@ -1,0 +1,84 @@
+1. Sass ta valo kore ses kora 1000%
+2.regexer tools download and setup[45]
+
+
+Prosseing  ------------------
+1.underscores.me theke akta framwork 'sass' shoho genarate korte hobe.
+2.bootstrap.me theke bootstrap nite hobe.
+3. ai 2ta file k amar wrodpress theme er modde rakbo.
+4. Theme hisebe pelo kina ta niccit korte hobe[bootstrap-styleshet missing takbe]
+5.regexer tools die kisu replace korte hobe. 
+
+how to use Github for create a Theme==============================
+   1. At frist install git -> sudo apt-get install git
+   2. Username and Email Thik korte hobe->
+      git config --global user.name "shahin"
+      git config --global user.email "shahinmohammad24rb@gmail.com"
+   3. User name and Email ta ki dilam ta cheak korar jonno-> git config --list
+   4. Kono repository  k control e ante chaile oi directory te jete hobe. 
+       open terminal and ->
+   ->  pwd [ dia right path ase kina dekte hobe.]
+   ->git init [if have a folder] or
+   ->git init gitrepo.git [if not have a folder. its create a folder]
+   -> ls -al [for looking .git . it called git init is working]
+   5. git er sobfile asce ki na ta  dekhar jonno 
+     -> git status [It make sure for coming file, Its red now]
+
+  6.File Permision thik kora[58 min]
+    we konw wp file permission is file->644=14
+    we know folder/direcotry permission is = 755=17
+       ---Group and username change korar jono
+         ->sudo chown www newuser name:Newgroupname /link path -R [cahnge user and group owenership, R= recersive babar baba  ]
+
+      ->sudo find /var/www . -type d -exec chomd 755 {} + [cahnge d = directory permison ,Find er por kon path  theke Find korbe ta dehay dite hobe]
+      -> sudo find /var/www. -type f -exec chomd 644 {} + [super user do dia dhukte hobe, find er por file path pao dite hobe jekhan thke change hobe, f= file  ]
+    7. 
+    -> git add . [akhane sob kaj ses korar por file gula add kore dite hobe, ata frist kaj korar por]
+    ->git add filename [prothom bar add korar por 2nd bar git add kore file name dite hobe]
+  8. save kora with message by git commit
+     -> git commit -m "write massage " [comment soho ]
+
+     ==============akshte add and commit kora
+     ---> git commit -a -m "comment here"[2nd time kaj koror ]
+
+9. ->git log [comment dekhar jonno]
+
+10. How to upload in github
+     git commit chara kono bisoy taka jabe na
+
+   -> git remote add origin [your github project link https://github.com/ShahinMohammad/Wordpress-Theme-Aptcoder-.git] or
+     ->git clon in my repository and go in to .git folder. Then final push.
+       
+   ->git push -u origin master [Main command for upload in  github]
+
+
+------------------Here use git Branch----------------
+Branch create
+  ->How to checek Brance 
+       ->git branch
+create branch
+      --> git branch name [Example git branch bootstrap]
+
+===Branch Delete====
+
+  --->git branch -d branch_name
+
+#How to checkout or switch branch to other branch
+     -- git checkout branceName[Example git checkout Bootstrap,,,, For Master to 
+          Bootstrap] 
+=========Git merge korar niom==========
+* jake merge korbo tar modde uncommited kono file rakha jabe na. commit kore rakte hobe
+*jar shate merge korbo tar moddde jete hobe [--->git checkout fileName]
+*Akhon merge korar time chole asbe
+   ----->git merge jekeMergeKorbo
+
+
+
+
+ 
+
+  
+
+
+
+
